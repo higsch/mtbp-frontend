@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Karolinska - MTB</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="assets/sass/mtb.css">
+    <script type="text/javascript" src="assets/js/functions.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr-custom.js"></script>
+    <script type="text/javascript" src="assets/js/rem.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148451160-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148451160-1' , { 'anonymize_ip': true });
+    </script>-->
+
+   
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+</head>
+
+<script>
+    $(document).ready(function(){
+        $("#menu-toggle").trigger("click");
+        //$('body').find('.page--summary-report').fadeToggle();
+
+    });
+</script>
+
+<body class="">
+
+<!-- Navigation -->
+<nav>
+    <div class="menu-controls row">
+        <div class="logoPublic"  ></div>
+        <button id="menu-toggle"><span>Menu</span></button>
+    </div>
+    <div id="menu-content" class="row">
+        <hr style="border-color:white;background-color:white; color:white;border-top: 1px solid white;"><a class="icon Empty row"  href="#" role="menuitem">Not Logged</a><a class="icon Empty row"  href="login.php" role="menuitem">Login</a><a class="icon Empty row"  href="RequestAccess.php" role="menuitem">Register</a><hr style="border-color:white;background-color:white; color:white;border-top: 1px solid white;"><br><a class="icon home row" href="welcome.php" role="menuitem">Home</a><a class="icon variant row"  href="UploadSequencingDataPublic.php" role="menuitem">Analyse</a><a class="icon faq row" href="MTBfaqPublic.php" role="menuitem">FAQ</a><a class="icon about row"  href="about.php" role="menuitem">About</a><br><hr style="border-color:white;background-color:white; color:white;border-top: 1px solid white;">    </div>
+</nav>
+<!-- /Navigation ----> 
+
+<div class="page--summary-report">
+     
+    <header>
+        <div class="container">
+            <div class="table-container row">            
+                <div class="left">
+                    <div class="logoPublic"></div>          
+                    <table><tr><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td>                    
+                    <a href="login.php" ><button class="change-status" type="button">Login</button></a>
+                    <a href="login.php" ><button class="change-status" type="button">Register</button></a>
+                    </table>
+                </div>
+            </div>
+
+                      
+            <div class="table-container row"><font color=red><b>This public version of the portal is still in beta version</b></font></div> 
+            
+
+        </div>
+    </header>
+    <br><br><br><br><br>
+    <div class="container">
+        <div class="summary-report--info box shadow row">
+               <div class="row  bg-light">
+                    <div class="info-box">
+                    <font size=5>  The Molecular Tumor Board Portal <b>interprets cancer genomic variants</b> </font>  
+                                     
+                    </div>                   
+               </div> 
+              Detected variants are classified according to their 
+
+
+              
+        <div style="display: inline" class="report-output--version Welcomepage">
+                <a id="table_1_1_1_0_open" class="toggle_trx">functional
+                        <div style="display: none"  id="table_1_1_1_0" class="popup datatable arrow-box box shadow"> 
+                            <div class="datapopup-button"><a class="toggle_trx" id="table_1_1_1_0_close">Close</a></div> 
+                            <br><br>
+                             The functionality of variants found in cancer genes refers here to their biological relevancefor promoting disease phenotypes. <br><br>
+                This can inform (among others, and together with the clinical and family history) the patient stratification to 
+                <b>genomic-guided clinical trials</b>(e.g. prioritize a FGFR inhibitor trial for those tumors with FGFR3 mutations estimated as activating) 
+                and the <b>genetic counseling referral</b> (e.g. if germline variants in cancer predisposing genes are estimated as pathogenic). <br><br>
+                     <a class="linkPublic" href="MTBfaq.php">Learn more</a> 
+                        </div></a>
+                </div>
+        
+
+             and 
+
+             
+        <div style="display: inline" class="report-output--version Welcomepage">
+                <a id="table_1_1_1_1_open" class="toggle_trx">predictive
+                        <div style="display: none"  id="table_1_1_1_1" class="popup datatable arrow-box box shadow"> 
+                            <div class="datapopup-button"><a class="toggle_trx" id="table_1_1_1_1_close">Close</a></div> 
+                            <br><br>
+                             Describe the relevance of variants for the <b>disease diagnosis, prognosis and drug response</b> 
+                according to the biomarkers currently reported by clinical and preclinical results. <br><br>
+
+                This analysis can reveal, among others, opportunities for <b>investigational therapies</b> or <b>off-label prescriptions</b>, 
+                which may be considered irrespective of the patient’s eligibility for ongoing clinical trials.<br><br> <a class="linkPublic" href="MTBfaq.php">Learn more</a> 
+                        </div></a>
+                </div>
+         
+            relevance in interactive 
+                 
+            
+        <div style="display: inline" class="report-output--version Welcomepage">
+                <a id="table_1_1_1_2_open" class="toggle_trx">reports
+                        <div style="display: none"  id="table_1_1_1_2" class="popup datatable arrow-box box shadow"> 
+                            <div class="datapopup-button"><a class="toggle_trx" id="table_1_1_1_2_close">Close</a></div> 
+                            <br><br>
+                            <b> Two interactive reports</b> in HTML (exportable to PDF) are provided. The first report classifies the variants
+                according to their <b>functional relevance</b> in a summary view. 
+               In addition, a detailed view with further information per gene and variant is also provided. 
+               The second report classifies the <b>predictive relevance</b> of the detected biomarkers in cancer prognosis,
+                diagnosis and drug response according to current knowledge.<br><br>
+                
+                All the annotation details supporting
+                 the variant classification (including the access to the original source(s)) as well as a 
+                 version control of the employed resources are included to empower a <b>critical review</b> of the results.
+                                            <br><br> <a class="linkPublic" href="MTBfaq.php">Learn more</a> 
+                        </div></a>
+                </div>
+                        
+                
+                <br><br>
+
+               <table><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td> <a class="linkPublicBold" href=UploadSequencingDataPublic.php>> Analyse your variants</a></table>
+               <table><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td> <a class="linkPublic" href=ExamplePublic.php>> See examples</a></table>
+            </font> 
+        </div>
+    </div>
+
+
+
+    <div class="container">
+                <div class="summary-report--info box shadow row">
+                <div class="row  bg-light">
+                            <div class="info-box">
+                            <font size=5>  The Molecular Tumor Board Portal uses distinct<b> levels of supporting evidence</b></font>                                          
+                            </div>                   
+               </div>          
+               Variants are annotated by a comprehensive set of 
+
+               
+        <div style="display: inline" class="report-output--version Welcomepage">
+                <a id="table_1_1_1_3_open" class="toggle_trx">knowledgbases,
+                        <div style="display: none"  id="table_1_1_1_3" class="popup datatable arrow-box box shadow"> 
+                            <div class="datapopup-button"><a class="toggle_trx" id="table_1_1_1_3_close">Close</a></div> 
+                            <br><br>
+                            
+                            The MTBP uses a comprehensive set of <b>expert curated databases </b> collecting <b>clinical and preclinical knowledge</b> associated to genomic 
+                            events(such as their role in disease pathogenicity or anti-cancer drugs response). Assertions supported by lower quality data (e.g. not well-powered studies) 
+                            and/or without consensus are not used to classify the variants (but provided as additional descriptives). <br><br>
+
+                            The MTBP uses <b>public knowledgebases</b> developed by international efforts that (a) formalize the variant information by using pre-defined criteria; (b)
+                            are based on published biomedical literature (including conference communications for most recent reports); (c) 
+                            are committed to periodical updates; and (d) are open for the use and review of the community (see individual resources for licensing details). 
+                            <br><br> <a class="linkPublic" href="MTBfaq.php">Learn more</a> 
+                        </div></a>
+                </div>
+         
+
+
+
+           
+
+
+                         bona fide biological
+
+
+                
+        <div style="display: inline" class="report-output--version Welcomepage">
+                <a id="table_1_1_1_4_open" class="toggle_trx">assumptions
+                        <div style="display: none"  id="table_1_1_1_4" class="popup datatable arrow-box box shadow"> 
+                            <div class="datapopup-button"><a class="toggle_trx" id="table_1_1_1_4_close">Close</a></div> 
+                            <br><br>
+                             Some bona fide assumptions are used to estimate the relevance of particular events without reported effects. These assumptions are based on
+                     <b>stringent criteria</b>, as the recommendations to consider mutations of null consequence type as loss-of-function events developed
+                      bythe study of Mendelian gene variants.
+
+                      <br><br> <a class="linkPublic" href="MTBfaq.php">Learn more</a> 
+                        </div></a>
+                </div>
+                        
+                and  
+                
+                
+        <div style="display: inline" class="report-output--version Welcomepage">
+                <a id="table_1_1_1_5_open" class="toggle_trx">computational estimations 
+                        <div style="display: none"  id="table_1_1_1_5" class="popup datatable arrow-box box shadow"> 
+                            <div class="datapopup-button"><a class="toggle_trx" id="table_1_1_1_5_close">Close</a></div> 
+                            <br><br>
+                             Computational estimations are used as the lowest level of evidence to estimate the variants effect if no other information is available. 
+                    Only results supported by <b>robust statistical methods</b> are employed according to our own benchmarking.
+                    <br><br> <a class="linkPublic" href="MTBfaq.php">Learn more</a> 
+                        </div></a>
+                </div>
+                        
+                 
+                 <br><br>
+               <table><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td> <a class="linkPublic" href=MTBfaqPublic.php>> See more details</a></table>            
+            </font> 
+        </div>
+    </div>
+
+   
+
+
+    <div class="container">
+                <div class="summary-report--info box shadow row">
+                <div class="row  bg-light">
+                            <div class="info-box">
+                            <font size=5>  The Molecular Tumor Board Portal follows <b>clinical expert consensus</b>  </font>                                          
+                            </div>                   
+               </div>          
+               The portal is developed under the <a class='linkPublic' href=# onclick=window.open('https://www.cancercoreeurope.eu')> Cancer Core Europe</a> umbrella following 
+                
+
+             
+        <div style="display: inline" class="report-output--version Welcomepage">
+                <a id="table_1_1_1_6_open" class="toggle_trx">expert consensus
+                        <div style="display: none"  id="table_1_1_1_6" class="popup datatable arrow-box box shadow"> 
+                            <div class="datapopup-button"><a class="toggle_trx" id="table_1_1_1_6_close">Close</a></div> 
+                            <br><br>
+                             The MTBP has been developed under the umbrella of the Cancer Core Europe, which is formed by seven leading European 
+                        oncology centers with the aim of implementing new therapeutic strategies involving knowledge, data and technology sharing. 
+                        Variants are classified by their <b>functional and predictive relevance</b> following <b>international guidelines</b> as available or developing
+                        <b>in-house expert consensus</b> otherwise. <br><br>
+
+                        The public version of the portal does not incorporate information that cannot be retrieved from a generic input 
+                        (such as the germline and/or tumor origin of the variants or their allele frequency) 
+                        or implement features dependant on project specifications (such as match variants with clinical trials of interest).
+                        Instead, the public MTBP provides an analytical framework to analyse cancer variants that supports (but <b>does not substitute</b>) 
+                        the healthcare professional judgement.
+
+                        <br><br> <a class="linkPublic" href="MTBfaq.php">Learn more</a> 
+                        </div></a>
+                </div>
+        
+
+               and according to up-to-date
+
+
+               
+        <div style="display: inline" class="report-output--version Welcomepage">
+                <a id="table_1_1_1_7_open" class="toggle_trx">knowledge
+                        <div style="display: none"  id="table_1_1_1_7" class="popup datatable arrow-box box shadow"> 
+                            <div class="datapopup-button"><a class="toggle_trx" id="table_1_1_1_7_close">Close</a></div> 
+                            <br><br>
+                             The MTBP queries <b>current clnical and preclinical knowledge </b>across a comprehensive set of databases gathering information associated to genomic events.
+                    In addition, <b>estimations</b> according to <b>latest guidelines and computational calculations</b> are used for those variants with no other available evidences.
+
+                    <br><br>
+                    The MTBP performs <b>periodical semi-automatic updates </b>of the content of the knowledgebases. In addition, new analytical features will be 
+                    incorporated as part of the development of the technology, which is ensured by the adoption of the portal by the 
+                    Cancer Core Europe as well as by other local initiatives
+
+                    <br><br> <a class="linkPublic" href="MTBfaq.php">Learn more</a> 
+                        </div></a>
+                </div>
+        
+               
+                <br><br>
+                <table><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td> <a class="linkPublic" href=about.php>> About us</a></table> 
+                          
+            </font> 
+        </div>
+    </div>
+
+    
+    <header>
+        <div class="container">
+            <center><b>Disclaimer:</b> The analyses provided by this resource are not intended for any clinical use without the health care professional judgment.<br> Results are subject to change as further information becomes available.<br><br><br><div class="table-container row">
+                   <table><td style="vertical-align: top">          
+                   <div class="ki" ></div><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td style="vertical-align: top">
+                   <div class="scilifelab" ></div ><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td style="vertical-align: top">
+                   <div class="cce" > 
+            </div>
+            </center>
+        </div>
+    </header>   
+    <br><br>
+
+    <script>
+
+        function togglePopupID(ID) { 
+            $("div.popup#" + ID).toggle();
+        }
+
+            $("a.toggle_trx").click(function() {
+                var popup_id = $(this).attr('id').replace('_close', 
+                '').replace('_open', '');
+                togglePopupID(popup_id);
+            });
+    </script>
+
+
+</div>
+
+
+
+</body>
+
+
+

@@ -1,0 +1,1622 @@
+/* ### Breakpoint definitions */
+@media screen and (max-width: 400px) {
+  @viewport {
+    width: 320px; } }
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue.ttf") format("truetype");
+  font-style: normal; }
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url("../fonts/HelveticaNeue-Bold.ttf") format("truetype");
+  font-style: normal; }
+@font-face {
+  font-family: "Helvetica Neue Italic";
+  src: url("../fonts/HelveticaNeue-Italic.ttf") format("truetype");
+  font-style: normal; }
+p {
+  font-size: 1.5rem;
+  line-height: 1.375; }
+  @media screen and (max-width: 450px) {
+    p {
+      font-size: 1.25rem; } }
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 1.2;
+  margin: 0; }
+
+h1 {
+  font-size: 2.25rem; }
+
+h2 {
+  font-size: 1.875rem; }
+
+h3 {
+  font-size: 1.125rem; }
+
+* {
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  font-family: "Helvetica Neue";
+  background-color: #F7F7F7;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  padding-top: 2.5rem;
+  color: #4A4A4A; }
+
+a {
+  color: #3F81D0; }
+  a:link {
+    color: #3F81D0; }
+  a:hover {
+    color: #340261;
+    text-decoration: underline; }
+  a:visited {
+    color: #480484; }
+  a:active {
+    color: #3F81D0; }
+  a img {
+    border: none;
+    float: left; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: none; }
+
+.hidden {
+  display: none; }
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 82.9375rem;
+  float: none !important; }
+
+.box {
+  background: #ffffff; }
+  .box.shadow {
+    -ms-box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.2);
+    behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+
+.accessibly-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0); }
+
+main {
+  overflow: hidden; }
+
+.row {
+  float: left;
+  width: 100%;
+  margin-bottom: 1.25rem; }
+
+.col {
+  float: left;
+  clear: none;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem; }
+  .col > .col.span100 {
+    width: 100%; }
+  .col:last-child {
+    float: right; }
+    .col:last-child.last {
+      float: left; }
+  .col:only-child {
+    float: left; }
+
+/* Global button styling */
+button {
+  height: auto;
+  width: auto;
+  border: 0.0625rem solid #D2D2D2;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  behavior: url("assets/js/PIE-1.0.0/PIE.htc");
+  background-color: #ffffff;
+  font-size: 1.0625rem;
+  padding: 0.625rem; }
+  button .icon {
+    margin-left: 0.625rem;
+    float: right;
+    height: 0.8125rem; }
+    button .icon.pdf {
+      width: 0.9375rem;
+      height: 1.25rem;
+      background: url("../img/icons/png/icon-pdf-dark.png");
+      background: url("../img/icons/icon-pdf-dark.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 100%; }
+  button:hover {
+    cursor: pointer; }
+  button.toggle--details {
+    position: absolute;
+    margin-right: 0;
+    border: none;
+    background: transparent;
+    line-height: 1.4375rem;
+    padding: 0; }
+    button.toggle--details .circle {
+      float: right;
+      width: 1.4375rem;
+      height: 1.4375rem;
+      margin-left: 0.3125rem;
+      background: url("../img/icons/png/icon-chevron-white-down.png");
+      background-position: 50% 50%;
+      background: url("../img/icons/icon-chevron-white-down.svg"), linear-gradient(transparent, transparent);
+      background-position: 50% 50%;
+      background-color: #43ACFF;
+      background-repeat: no-repeat;
+      -ms-border-radius: 6.25rem;
+      -o-border-radius: 6.25rem;
+      -moz-border-radius: 6.25rem;
+      -webkit-border-radius: 6.25rem;
+      border-radius: 6.25rem;
+      behavior: url("assets/js/PIE-1.0.0/PIE.htc");
+      transition: 0.5s rotate ease; }
+    button.toggle--details.open .circle {
+      transform: rotate(-180deg); }
+
+.transcript-infobox {
+  position: relative;}
+
+.repr-transcript {
+}
+
+/* Question marks */
+.title-questionmark{
+ position: absolute;
+ top: 3rem;
+ display: inline-block; 
+}
+.othertitle-questionmark {
+ position: relative;
+ display: inline-block; 
+}
+.pipeline-version-infobox {
+ position: relative; }
+.questionmark{
+  width: 1.4375rem;
+  height: 1.4375rem;
+  margin-left: 0.3125rem;
+  background: url("../img/icons/png/question-mark-white.png");
+  background-position: 50% 50%;
+  background-position: 50% 50%;
+  background-color: #43ACFF;
+  background-repeat: no-repeat;
+  -ms-border-radius: 6.25rem;
+  -o-border-radius: 6.25rem;
+  -moz-border-radius: 6.25rem;
+  -webkit-border-radius: 6.25rem;
+  border-radius: 6.25rem;
+  behavior: url("assets/js/PIE-1.0.0/PIE.htc");
+  transition: 0.5s rotate ease; }
+
+/* Status with circle and text used on Summary page, Menu, and Patient list (listing and pop-over) */
+.status {
+  font-family: "Helvetica Neue Bold";
+  line-height: 1.1875; }
+  .status .circle {
+    float: left;
+    -ms-border-radius: 3.125rem;
+    -o-border-radius: 3.125rem;
+    -moz-border-radius: 3.125rem;
+    -webkit-border-radius: 3.125rem;
+    border-radius: 3.125rem;
+    height: 1.0625rem;
+    width: 1.0625rem;
+    background-color: transparent;
+    -ms-box-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.2);
+    margin-right: 0.625rem;
+    behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+  .status.rejected .circle {
+    background-color: #FF2700; }
+  .status.approved .circle {
+    background-color: #60B800; }
+  .status.pending .circle {
+    background-color: #FFEC00; }
+  .status.undefined .circle {
+    background-color: #D2D2D2; }
+
+/* Current status: used on Summary page and in pop-over on Patient list page */
+.current-status {
+  float: left;
+  font-size: 1.5rem;
+  padding-top: 0.625rem; }
+  .current-status span {
+    color: #9BA0A5; }
+  .current-status .status {
+    float: left;
+    margin-right: 1.25rem; }
+
+.mutation-status {
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  behavior: url("assets/js/PIE-1.0.0/PIE.htc");
+  padding: 0.625rem;
+  font-family: "Helvetica Neue Bold"; }
+  .mutation-status.high {
+    background: #FF2700;
+    color: #ffffff; }
+  .mutation-status.intermediate {
+    background: #ffbc02;
+    color: #ffffff; }
+  .mutation-status.low {
+    background: #AEAEAE;
+    color: #ffffff; }
+
+.info-box .info-row {
+  float: left;
+  width: 100%;
+  margin-bottom: 0.3125rem; }
+.info-box .info-label, .info-box .info-data {
+  float: left;
+  font-size: 1.125rem; }
+.info-box .info-label {
+  width: 30%; }
+.info-box .info-data {
+  width: 70%; }
+.info-box .info-label.info-important, .info-box .info-data.info-important {
+  font-size: 1.375rem;
+  font-family: "Helvetica Neue Bold";
+}
+.info-box h3 {
+  font-size: 1.375rem;
+  line-height: 1.3;
+  font-family: "Helvetica Neue Bold";
+  margin-bottom: 0.625rem; }
+
+div.id-box {
+  margin-bottom: 1rem;
+}
+
+div.id-box a, a.id-box {
+  color: #ffffff;
+  padding: 0.3125rem;
+  text-transform: uppercase;
+  border: 0.0625rem solid #3F81D0;
+  -ms-border-radius: 0.1875rem;
+  -o-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  -webkit-border-radius: 0.1875rem;
+  border-radius: 0.1875rem;
+  background-color: #43ACFF;
+  text-decoration: none;
+  transition: 0.2s all ease;
+  position: relative;
+  behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+  a.id-box:hover {
+    top: -0.0625rem;
+    left: -0.0625rem;
+    -ms-box-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.4);
+    behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+
+.bg-light {
+  background: rgba(67, 172, 255, 0.1);
+  behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+
+.arrow-box {
+  z-index: 1000;
+  width: 28.125rem;
+  position: absolute;
+  background: #ffffff;
+  border: 0.0625rem solid #D2D2D2;
+  bottom: 3.75rem;
+  left: -12.8125rem;
+  padding: 2.5rem;
+  font-family: "Helvetica Neue"; }
+  .arrow-box:after, .arrow-box:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .arrow-box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 0.9375rem;
+    margin-left: -0.9375rem; }
+  .arrow-box:before {
+    border-color: rgba(255, 0, 255, 0);
+    border-top-color: #D2D2D2;
+    border-width: 1rem;
+    margin-left: -1rem; }
+  .arrow-box p {
+    font-size: 1.125rem;
+    margin-top: 0; }
+.datatable.arrow-box {
+  left: -24rem;
+  bottom: unset;
+  width: 50.125rem;}
+.datatable.arrow-box:before, .datatable.arrow-box:after {
+    top: -1.8rem;
+    border-color: rgba(255,255,255,0); }
+.datatable.arrow-box:after {
+    border-bottom-color: #ffffff; }
+
+.vartable.arrow-box {
+  bottom: 2rem;
+}
+
+.datatable.arrow-box .datapopup-button {
+  float: right;
+}
+.effect-title p {
+  font-size: 1rem;
+  text-decoration: underline dashed blue;
+}
+.repr-transcript .arrow-box {
+  width: 50rem;}
+
+.population-af .arrow-box {
+  width: 50rem;}
+
+.pipeline-version-infobox .arrow-box {
+  position: absolute;
+  text-align: left;
+  color: black;
+  width: 30.125rem;
+  top: 2rem;
+  bottom: unset;
+  left: -10rem;}
+
+.reported-effect--source {
+ position: relative; }
+.reported-effect--source .arrow-box {
+  display: none;
+  position: absolute;
+  top: -20rem;
+  left: -10rem;}
+.reported-effect--source:hover .arrow-box {
+  display: block;}
+/* CUSTOM SELECT:
+ * Container used for styling the custom select in Patient list, the buttom class below adds the
+ * bg gradient, corners, etc. Using accessible styling https://github.com/filamentgroup/select-css */
+.custom-select {
+  width: calc(100% - 1.25rem);
+  position: relative;
+  display: block;
+  /* Default theming: custom-select */
+  border: 0.0625rem solid #E9E9E9;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  -ms-box-shadow: 0 0.0625rem 0 0.0625rem rgba(0, 0, 0, 0.04);
+  -o-box-shadow: 0 0.0625rem 0 0.0625rem rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 0.0625rem 0 0.0625rem rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0 0.0625rem 0 0.0625rem rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0.0625rem 0 0.0625rem rgba(0, 0, 0, 0.04);
+  left: 0.625rem;
+  behavior: url("assets/js/PIE-1.0.0/PIE.htc");
+  /* This is the native select, we're making everything but the text invisible so
+   * we can see the button styles in the wrapper */
+  /* Default theming: Hover style */
+  /* Custom arrow sits on top of the select - could be an image, SVG, icon font,
+   * etc. or the arrow could just baked into the bg image on the select. */
+  /* Set options to normal weight */ }
+  .custom-select:hover {
+    border-color: #888; }
+  .custom-select select {
+    width: 100%;
+    height: 2.5rem;
+    margin: 0;
+    outline: none;
+    padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
+    /* Prefixed box-sizing rules necessary for older browsers */
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* Font size must be 16px to prevent iOS page zoom on focus */
+    font-size: 1rem;
+    /* Default theming: select */
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 2;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em;
+    behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+  .custom-select:after {
+    content: " ";
+    position: absolute;
+    top: 1rem;
+    right: 0.625rem;
+    z-index: 2;
+    background: url("../img/icons/icon-chevron-black-down.svg") no-repeat;
+    background-size: 0.9375rem 0.625rem;
+    width: 0.9375rem;
+    height: 0.625rem;
+    /* These hacks make the select behind the arrow clickable in some browsers */
+    pointer-events: none;
+      pointer-events-display: none;
+      pointer-events-width: 0;
+      pointer-events-height: 0;
+      pointer-events-margin-top: -0.1875rem; }
+  .custom-select:focus {
+    /* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
+    box-shadow: 0 0 0.0625rem 0.1875rem rgba(59, 153, 252, 0.7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; }
+  .custom-select option {
+    font-weight: normal;
+    font-size: 1.125rem; }
+
+/* Firefox <= 34 has a false positive on @supports( -moz-appearance: none )
+ * @supports ( mask-type: alpha ) is Firefox 35+
+ */
+@supports (-webkit-appearance: none) or (appearance: none) or ((-moz-appearance: none) and (mask-type: alpha)) {
+  /* Show custom arrow */
+  .custom-select {
+    /* Remove select styling */ }
+    .custom-select:after {
+      display: block; }
+    .custom-select select {
+      padding-right: 1.25rem;
+      /* inside @supports so that iOS <= 8 display the native arrow */
+      background: none;
+      /* inside @supports so that Android <= 4.3 display the native arrow */
+      border: 0.0625rem solid transparent;
+      border: 0.0625rem solid transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; } }
+@supports (box-shadow: none) {
+  .custom-select select:focus {
+    outline: none; } }
+nav {
+  position: fixed;
+  max-width: 16.25rem;
+  left: 0;
+  top: 0;
+  background: #FA6332;
+  padding: 1.25rem 0.625rem 0rem 0.625rem;
+  min-height: 0.0625rem;
+  transition: 0.3s min-height ease;
+  z-index: 101; }
+  nav .menu-controls {
+    float: left; }
+  nav .menu-controls .logo {
+      float: left;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: url("../img/logo/png/logo-karolinska-mtb-dark.png");
+      background: url("../img/logo/logo-karolinska-mtb-dark.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 9.375rem 2.5rem;
+      transition: 0.5s all ease; }
+    nav .menu-controls button {
+      width: 2.5rem;
+      color: #ffffff;
+      font-size: 0.8125rem; }
+      nav .menu-controls button#menu-toggle {
+        float: left;
+        clear: both;
+        background: transparent;
+        border: none;
+        transition: 0.3s all ease;
+        padding: 0;
+        margin-top: 1.25rem; }
+        nav .menu-controls button#menu-toggle span {
+          float: left;
+          width: 100%;
+          margin-top: 0.3125rem; }
+        nav .menu-controls button#menu-toggle:before {
+          content: "";
+          float: left;
+          width: 2.5rem;
+          height: 1.4375rem;
+          background: url("../img/icons/png/icon-burger-white.png");
+          background: url("../img/icons/icon-burger-white.svg"), linear-gradient(transparent, transparent);
+          background-repeat: no-repeat;
+          background-size: 2.5rem 1.4375rem;
+          transition: 0.3s all ease; }
+  nav #menu-content {
+    float: left;
+    display: none;
+    color: #ffffff;
+    opacity: 0;
+    transition: 0.7s opacity ease; }
+  nav.open {
+    height: 100%; }
+    nav.open #menu-content {
+      opacity: 1; }
+    nav.open .menu-controls .logo {
+      float: left;
+      width: 9.375rem;
+      height: 2.5rem; }
+    nav.open .menu-controls button {
+      width: 1.875rem;
+      color: #ffffff; }
+      nav.open .menu-controls button#menu-toggle {
+        clear: none;
+        float: right;
+        margin-left: 0.625rem;
+        background: transparent;
+        border: none; }
+        nav.open .menu-controls button#menu-toggle:before {
+          content: "";
+          float: right;
+          width: 1.875rem;
+          height: 1.3125rem;
+          background: url("../img/icons/png/icon-chevron-white-left.png");
+          background: url("../img/icons/icon-chevron-white-left.svg"), linear-gradient(transparent, transparent);
+          background-repeat: no-repeat;
+          background-size: 1.125rem 1.3125rem; }
+        nav.open .menu-controls button#menu-toggle span {
+          display: none; }
+  nav .user {
+    border-top: 0.125rem solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0.125rem solid rgba(255, 255, 255, 0.5);
+    padding: 1.25rem; }
+    nav .user .user-icon {
+      float: left;
+      width: 1.875rem;
+      height: 1.875rem;
+      background: url("../img/icons/png/icon-user.png");
+      background: url("../img/icons/icon-user.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat; }
+    nav .user .user-info {
+      float: right;
+      width: calc(100% - 3.125rem); }
+      nav .user .user-info .user-name {
+        font-size: 1.125rem; }
+      nav .user .user-info .user-title {
+        font-size: 0.8125rem; }
+  nav .box {
+    float: left;
+    color: #4A4A4A;
+    padding: 1.25rem; }
+    nav .box.patient-info .patient-id-header {
+      float: left;
+      clear: both;
+      width: 100%;
+      font-size: 1.25rem; }
+    nav .box.patient-info .patient-id {
+      float: left;
+      clear: both;
+      width: 100%;
+      font-size: 1.25rem;
+      font-family: "Helvetica Neue Bold"; }
+    nav .box.patient-info .status {
+      float: left;
+      clear: both;
+      width: 100%;
+      font-size: 1.25rem; }
+  nav a[role=menuitem] {
+    float: left;
+    clear: both;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 1.25rem;
+    font-family: "Helvetica Neue Bold"; }
+    nav a[role=menuitem].sample {
+      padding: 0;
+      color: #4a4a4a; }
+    nav div.patient-id-header.samples {
+      padding: 1.5rem 0 0.5rem 0;
+    }
+    nav div.circle {
+    margin: 0 0 1.5rem;
+    }
+
+    nav a[role=menuitem]:hover {
+      text-decoration: underline; }
+    nav a[role=menuitem].icon.is-active {
+      background: #ffffff;
+      color: #4A4A4A;
+      border-radius: 1.25rem;
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem; }
+    nav a[role=menuitem].icon:before {
+      float: left;
+      content: "";
+      width: 1.125rem;
+      min-height: 1.125rem;
+      margin-right: 0.625rem; }
+    nav a[role=menuitem].icon.padlock:before {
+      background: url("../img/icons/padlock.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.padlock.is-active:before {
+      background: url("../img/icons/padlock.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.25rem; }
+      nav a[role=menuitem].icon.home:before {
+        background: url("../img/icons/home.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+        background-size: 1.125rem 1.25rem; }
+      nav a[role=menuitem].icon.home.is-active:before {
+        background: url("../img/icons/home.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+        background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.upload:before {
+        background: url("../img/icons/share-arrow.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+        background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.upload.is-active:before {
+        background: url("../img/icons/share-arrow.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+        background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.variant:before {
+          background: url("../img/icons/variant.svg"), linear-gradient(transparent, transparent);
+          background-repeat: no-repeat;
+          background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.variant.is-active:before {
+          background: url("../img/icons/variant.svg"), linear-gradient(transparent, transparent);
+          background-repeat: no-repeat;
+          background-size: 1.125rem 1.25rem; }
+    /* Added by Maan 9-9-2018 for public server*/
+    nav a[role=menuitem].icon.about:before {
+            background: url("../img/icons/about-us_white.svg"), linear-gradient(transparent, transparent);
+            background-repeat: no-repeat;
+            background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.about.is-active:before {
+            background: url("../img/icons/about-us_white.svg"), linear-gradient(transparent, transparent);
+            background-repeat: no-repeat;
+            background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.faq.is-active:before {
+      background: url("../img/icons/png/question-mark-white.png");
+      background: url("../img/icons/question-mark.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.faq:before {
+      background: url("../img/icons/png/question-mark-white.png");
+      background: url("../img/icons/question-mark.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.patient-list.is-active:before {
+      background: url("../img/icons/png/icon-patient-list-dark.png");
+      background: url("../img/icons/icon-patient-list-dark.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.patient-list:before {
+      height: 1.3125rem;
+      background: url("../img/icons/png/icon-patient-list-white.png");
+      background: url("../img/icons/icon-patient-list-white.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.folder.is-active:before {
+      background: url("../img/icons/png/icon-summary-folder-dark.png");
+      background: url("../img/icons/icon-summary-folder-dark.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.folder:before {
+      height: 1.3125rem;
+      background: url("../img/icons/png/icon-summary-folder-white.png");
+      background: url("../img/icons/icon-summary-folder-white.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.25rem; }
+      background-repeat: no-repeat;
+      background-size: 18px 20px; }
+    nav a[role=menuitem].icon.pdf span {
+      opacity: 0.4; }
+    nav a[role=menuitem].icon.pdf.is-active:before {
+      background: url("../img/icons/png/icon-pdf-dark.png");
+      background: url("../img/icons/icon-pdf-dark.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.25rem; }
+    nav a[role=menuitem].icon.pdf:before {
+      height: 1.3125rem;
+      background: url("../img/icons/png/icon-pdf-white.png");
+      background: url("../img/icons/icon-pdf-white.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 1.125rem 1.25rem; }
+
+.page--login .login .box {
+  min-height: 45rem;
+  background: #ffffff url("../img/bg-login.png") no-repeat right;
+  background-size: 50%;
+  behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+  .page--login .login .box .left {
+    float: left;
+    width: 40%;
+    padding: 10rem 3.75rem 0rem 3.75rem;
+    position: relative; }
+    .page--login .login .box .left .logo {
+      position: absolute;
+      top: 1.25rem;
+      left: 1.25rem;
+      width: 12.5rem;
+      height: 3.4375rem;
+      background: url("../img/logo/png/logo-karolinska-mtb-tone.png");
+      background: url("../img/logo/logo-karolinska-mtb-tone.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    .page--login .login .box .left h1 {
+      margin-bottom: 1.25rem; }
+    .page--login .login .box .left h2 {
+      color: #9BA0A5; }
+    .page--login .login .box .left form {
+      margin-top: 2.5rem; }
+      .page--login .login .box .left form .error-message {
+        font-size: 0.8125rem;
+        color: #D0021B;
+        margin-bottom: 0.625rem; }
+      .page--login .login .box .left form label {
+        float: left;
+        width: auto;
+        position: relative;
+        margin-top: -1.5625rem;
+        top: 1.875rem;
+        left: 1.25rem;
+        font-size: 0.6875rem;
+        color: #9BA0A5;
+        transition: 0.4s font-size ease, 0.4s font-family ease; }
+        .page--login .login .box .left form label:hover, .page--login .login .box .left form label:focus {
+          font-size: 1rem;
+          color: #4A4A4A;
+          font-family: "Helvetica Neue Bold"; }
+      .page--login .login .box .left form input[type=username] {
+        -ms-border-radius: 0.3125rem 0.3125rem 0 0;
+        -o-border-radius: 0.3125rem 0.3125rem 0 0;
+        -moz-border-radius: 0.3125rem 0.3125rem 0 0;
+        -webkit-border-radius: 0.3125rem 0.3125rem 0 0;
+        border-radius: 0.3125rem 0.3125rem 0 0;
+        behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+      .page--login .login .box .left form input[type=password] {
+        -ms-border-radius: 0 0 0.3125rem 0.3125rem;
+        -o-border-radius: 0 0 0.3125rem 0.3125rem;
+        -moz-border-radius: 0 0 0.3125rem 0.3125rem;
+        -webkit-border-radius: 0 0 0.3125rem 0.3125rem;
+        border-radius: 0 0 0.3125rem 0.3125rem;
+        behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+      .page--login .login .box .left form input[type=username], .page--login .login .box .left form input[type=password] {
+        float: left;
+        width: 100%;
+        border: 0.0625rem solid #E9E9E9;
+        font-size: 1.125rem;
+        line-height: 2;
+        padding: 1.25rem 1.25rem 0.625rem 1.25rem;
+        font-family: "Helvetica Neue Bold";
+        border-left: 0.625rem solid #60B800; }
+      .page--login .login .box .left form button {
+        width: 60%;
+        margin: 5rem 20% 1.25rem 20%;
+        color: #ffffff;
+        background: #D2D2D2;
+        border-color: #D2D2D2; }
+      .page--login .login .box .left form .forgot-link {
+        float: left;
+        width: 100%;
+        text-align: center;
+        font-size: 0.6875rem;
+        line-height: 1.125rem;
+        color: #4A4A4A;
+        text-decoration: none;
+        transition: 0.4s font-size ease; }
+        .page--login .login .box .left form .forgot-link:hover, .page--login .login .box .left form .forgot-link:focus {
+          text-decoration: underline;
+          font-size: 1rem; }
+  .page--login .login .box .right {
+    float: right;
+    width: 50%;
+    padding: 10rem 3.75rem 0rem 3.75rem;
+    position: relative;
+    min-height: 43.75rem; }
+    .page--login .login .box .right p {
+      font-size: 1.125rem;
+      line-height: 1.4;
+      width: 70%; }
+    .page--login .login .box .right .logo-board .logo-square {
+      float: left;
+      width: 8.0625rem;
+      height: 7.0625rem;
+      background: #D2D2D2;
+      color: #ffffff;
+      text-align: center;
+      padding-top: 2.5rem;
+      margin-right: 1.25rem;
+      margin-bottom: 1.25rem; }
+    .page--login .login .box .right .logo-board .ki-square {
+        float: left;
+        width: 9.0625rem;
+        height: 7.0625rem;
+        background-image: url("../img/ki.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 2.5rem;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem; }
+        .page--login .login .box .right .logo-board .scilifelab-square {
+          float: left;
+          width: 9.0625rem;
+          height: 7.0625rem;
+          background-image: url("../img/scilifelab.jpg");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          color: #ffffff;
+          text-align: center;
+          padding-top: 2.5rem;
+          margin-right: 1.25rem;
+          margin-bottom: 1.25rem; }
+          .page--login .login .box .right .logo-board .cce-square {
+            float: left;
+            width: 9.0625rem;
+            height: 7.0625rem;
+            background-image: url("../img/CCE.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 2.5rem;
+            margin-right: 1.25rem;
+            margin-bottom: 1.25rem; }
+     .page--login .login .box .right .logo-board .Cam-square {
+          float: left;
+          width: 11.0625rem;
+          height: 7.0625rem;
+          background-image: url("../img/Cambridge.png");
+          
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          color: #ffffff;
+          text-align: center;
+          padding-top: 2.5rem;
+          margin-right: 1.25rem;
+          margin-bottom: 1.25rem; }
+      .page--login .login .box .right .logo-board .VHIO-square {
+            float: left;
+            width: 8.0625rem;
+            height: 7.0625rem;
+            background-image: url("../img/VHIO.jpg");
+            
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 2.5rem;
+            margin-right: 1.25rem;
+            margin-bottom: 1.25rem; }
+       .page--login .login .box .right .logo-board .GR-square {
+              float: left;
+              width: 11.0625rem;
+              height: 7.0625rem;
+              background-image: url("../img/GR.jpg");
+              
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              color: #ffffff;
+              text-align: center;
+              padding-top: 2.5rem;
+              margin-right: 1.25rem;
+              margin-bottom: 1.25rem; }
+         .page--login .login .box .right .logo-board .NKI-square {
+                float: left;
+                width: 10.0625rem;
+                height: 7.0625rem;
+                background-image: url("../img/NKI.bmp");
+                
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                color: #ffffff;
+                text-align: center;
+                padding-top: 2.5rem;
+                margin-right: 1.25rem;
+                margin-bottom: 1.25rem; }
+           .page--login .login .box .right .logo-board .DKFZ-square {
+                  float: left;
+                  width: 10.0625rem;
+                  height:7.0625rem;
+                  background-image: url("../img/DKFZ.png");
+                  
+                  background-repeat: no-repeat;
+                  background-size: 100% 100%;
+                  color: #ffffff;
+                  text-align: center;
+                  padding-top: 2.5rem;
+                  margin-right: 1.25rem;
+                  margin-bottom: 1.25rem; }
+    
+    .page--login .login .box .right .terms-link {
+      color: #FA6332;
+      position: absolute;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      text-decoration: none;
+      font-size: 0.6875rem;
+      transition: 0.4s font-size ease; }
+      .page--login .login .box .right .terms-link:hover, .page--login .login .box .right .terms-link:focus {
+        text-decoration: underline;
+        font-size: 1rem; }
+
+.page--patient-list .box {
+  padding: 2.5rem 0; }
+.page--patient-list header .table-container {
+  display: table; }
+.page--patient-list header .left, .page--patient-list header .right {
+  display: table-cell;
+  width: 50%;
+  vertical-align: bottom; }
+.page--patient-list header .right .logo {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  float: right;
+  width: 12.5rem;
+  height: 3.4375rem;
+  background: url("../img/logo/png/logo-karolinska-mtb-tone.png");
+  background: url("../img/logo/logo-karolinska-mtb-tone.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.page--patient-list #patient-list {
+  position: relative; }
+  .page--patient-list #patient-list .pop-over {
+    width: 100%;
+    max-width: 50rem;
+    position: absolute;
+    right: 1.25rem;
+    z-index: 201;
+    display: none;
+    padding: 0; }
+    .page--patient-list #patient-list .pop-over header {
+      margin-bottom: 0;
+      padding: 1.25rem;
+      background: rgba(67, 172, 255, 0.1); }
+      .page--patient-list #patient-list .pop-over header h1 {
+        font-size: 1.875rem; }
+      .page--patient-list #patient-list .pop-over header button.close-pop-over {
+        padding-right: 1.875rem;
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+        line-height: 1.25rem;
+        border: none;
+        background: transparent;
+        color: #3F81D0; }
+        .page--patient-list #patient-list .pop-over header button.close-pop-over:after {
+          position: absolute;
+          right: 0;
+          top: 0.75rem;
+          content: "";
+          width: 1.25rem;
+          height: 1.25rem;
+          background: url("../img/icons/png/icon-close.png");
+          background: url("../img/icons/icon-close.svg"), linear-gradient(transparent, transparent);
+          background-repeat: no-repeat; }
+    .page--patient-list #patient-list .pop-over #pop-over--table {
+      float: left;
+      width: 100%; }
+      .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row {
+        float: left;
+        width: 100%;
+        border-top: 0.0625rem solid #D2D2D2;
+        border-bottom: 0.0625rem solid #D2D2D2; }
+        .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row.open {
+          font-family: "Helvetica Neue Bold"; }
+        .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row.header {
+          font-family: "Helvetica Neue Bold";
+          text-align: left;
+          font-size: 1.0625rem;
+          line-height: 1.3125rem;
+          background: rgba(67, 172, 255, 0.1);
+          border-top: none;
+          behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row.header .pop-over--cell {
+            padding-bottom: 1.25rem; }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row.header .action:after {
+            display: none; }
+        .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row:hover:not(.header), .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row:focus:not(.header) {
+          border-top: 0.0625rem solid #3F81D0;
+          border-bottom: 0.0625rem solid #3F81D0; }
+        .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell {
+          float: left;
+          position: relative;
+          padding: 1.25rem 0; }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell:first-child {
+            padding-left: 2.5rem; }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell:last-child {
+            padding-right: 2.5rem; }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell.status-id {
+            width: 10%; }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell.status-description {
+            width: 40%; }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell.status-date {
+            width: 20%; }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell.status-user {
+            width: 20%; }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell.status-action {
+            width: 10%; }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell.status-info {
+            display: none;
+            float: left;
+            width: 80%;
+            margin-left: 10%;
+            font-family: "Helvetica Neue Italic";
+            font-size: 1.0625rem;
+            line-height: 1.4; }
+          .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell.status-action button {
+            padding: 0;
+            border: none;
+            background: transparent; }
+            .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell.status-action button .chevron {
+              float: right;
+              width: 1.4375rem;
+              height: 1.4375rem;
+              background: url("../img/icons/png/icon-chevron-black-down.png");
+              background-position: 50% 50%;
+              background: url("../img/icons/icon-chevron-black-down.svg"), linear-gradient(transparent, transparent);
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              transition: 0.5s rotate ease; }
+              .page--patient-list #patient-list .pop-over #pop-over--table .pop-over--row .pop-over--cell.status-action button .chevron.open {
+                transform: rotate(-180deg); }
+  .page--patient-list #patient-list #patient-list--controls {
+    padding: 2.5rem; }
+    .page--patient-list #patient-list #patient-list--controls input {
+      padding: 0.625rem;
+      border: 0.0625rem solid #E9E9E9;
+      box-shadow: inset 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.5), 0 0.125rem 0 0 rgba(211, 211, 211, 0.5);
+      -ms-border-radius: 0.25rem;
+      -o-border-radius: 0.25rem;
+      -moz-border-radius: 0.25rem;
+      -webkit-border-radius: 0.25rem;
+      border-radius: 0.25rem;
+      behavior: url("assets/js/PIE-1.0.0/PIE.htc");
+      float: left;
+      height: 42px;
+      font-size: 1.0625rem; }
+      .page--patient-list #patient-list #patient-list--controls input[type=search] {
+        width: 100%;
+        max-width: 27.5rem;
+        padding-left: 2.5rem;
+        background: url("../img/icons/png/icon-search-grey.png");
+        background-position: 0.625rem;
+        background: url("../img/icons/icon-search-grey.svg"), linear-gradient(transparent, transparent) no-repeat 0.625rem;
+        background-repeat: no-repeat;
+        -webkit-appearance: textfield; }
+      .page--patient-list #patient-list #patient-list--controls input[type=file] {
+          height: 40%; }
+      .page--patient-list #patient-list #patient-list--controls input[type=date] {
+        width: 10.625rem;
+        max-width: 10.625rem; }
+    .page--patient-list #patient-list #patient-list--controls .clear-field {
+      float: left;
+      border: none;
+      background: transparent;
+      position: relative;
+      left: -1.9375rem;
+      top: 0.8125rem;
+      width: 1rem;
+      height: 1rem;
+      background: url("../img/icons/png/icon-empty-feeld.png");
+      background-position: 50% 50%;
+      background: url("../img/icons/icon-empty-feeld.svg"), linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      margin-right: -1rem;
+      padding: 0; }
+    .page--patient-list #patient-list #patient-list--controls .date-picker {
+      float: left;
+      margin-left: 2.5rem; }
+      .page--patient-list #patient-list #patient-list--controls .date-picker .icon {
+        float: left;
+        margin: 0.3125rem 0 0 0.5625rem;
+        width: 1.6875rem;
+        height: 2rem;
+        background: url("../img/icons/png/icon-calendar.png");
+        background: url("../img/icons/icon-calendar.svg"), linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+        background-size: 100%; }
+      .page--patient-list #patient-list #patient-list--controls .date-picker .date-picker--divider {
+        float: left;
+        height: 2.8125rem;
+        line-height: 2.8125rem;
+        margin: 0 1.25rem; }
+    .page--patient-list #patient-list #patient-list--controls .patient-list--buttons {
+      float: right; }
+      .page--patient-list #patient-list #patient-list--controls .patient-list--buttons button:first-child {
+        margin-right: 1.25rem; }
+    .page--patient-list #patient-list #patient-list--controls .patient-list--count {
+      float: left;
+      width: 100%; }
+  .page--patient-list #patient-list #patient-list--table {
+    float: left;
+    width: 100%;
+    display: table;
+    border-collapse: collapse; }
+    .page--patient-list #patient-list #patient-list--table .patient-list--row {
+      display: table-row;
+      border-top: 0.0625rem solid #D2D2D2;
+      border-bottom: 0.0625rem solid #D2D2D2; }
+      .page--patient-list #patient-list #patient-list--table .patient-list--row.header {
+        font-family: "Helvetica Neue Bold";
+        text-align: left;
+        font-size: 1.0625rem;
+        line-height: 1.3125rem;
+        background: transparent;
+        border-top: none; }
+        .page--patient-list #patient-list #patient-list--table .patient-list--row.header .patient-list--cell {
+          padding-bottom: 1.25rem; }
+          .page--patient-list #patient-list #patient-list--table .patient-list--row.header .patient-list--cell span {
+            float: left;
+            position: relative;
+            padding-right: 0.625rem; }
+            .page--patient-list #patient-list #patient-list--table .patient-list--row.header .patient-list--cell span:after {
+              content: " ";
+              position: absolute;
+              top: 50%;
+            }
+        .page--patient-list #patient-list #patient-list--table .patient-list--row.header .action:after {
+          display: none; }
+      .page--patient-list #patient-list #patient-list--table .patient-list--row:nth-child(even) {
+        background: #FAFAFA; }
+      .page--patient-list #patient-list #patient-list--table .patient-list--row:hover:not(.header), .page--patient-list #patient-list #patient-list--table .patient-list--row:focus:not(.header) {
+        background: rgba(67, 172, 255, 0.1);
+        border-top: 0.0625rem solid #3F81D0;
+        border-bottom: 0.0625rem solid #3F81D0; }
+      .page--patient-list #patient-list #patient-list--table .patient-list--row .patient-list--cell {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0.3125rem 0; }
+        .page--patient-list #patient-list #patient-list--table .patient-list--row .patient-list--cell:first-child {
+          padding-left: 2.5rem; }
+        .page--patient-list #patient-list #patient-list--table .patient-list--row .patient-list--cell:last-child {
+          padding-right: 2.5rem; }
+        .page--patient-list #patient-list #patient-list--table .patient-list--row .patient-list--cell.action button {
+          color: #D2D2D2;
+          line-height: 1.4375rem;
+          border: none;
+          background: transparent; }
+          .page--patient-list #patient-list #patient-list--table .patient-list--row .patient-list--cell.action button .circle {
+            float: right;
+            width: 1.4375rem;
+            height: 1.4375rem;
+            margin-left: 0.3125rem;
+            background: url("../img/icons/png/icon-chevron-white-down.png");
+            background-position: 50% 50%;
+            background: url("../img/icons/icon-chevron-white-down.svg"), linear-gradient(transparent, transparent);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-color: #43ACFF;
+            -ms-border-radius: 6.25rem;
+            -o-border-radius: 6.25rem;
+            -moz-border-radius: 6.25rem;
+            -webkit-border-radius: 6.25rem;
+            border-radius: 6.25rem;
+            behavior: url("assets/js/PIE-1.0.0/PIE.htc"); }
+
+.page--summary-report header.page-header .left, .page--summary-report header.page-header .right {
+  width: 50%; }
+.page--summary-report header.page-header .left {
+  float: left; }
+  .page--summary-report header.page-header .left h2 {
+    margin-bottom: 1.25rem; }
+.page--summary-report header.page-header .right {
+  float: right; }
+  .page--summary-report header.page-header .right button {
+    float: right;
+    margin-bottom: 0.625rem; }
+  .page--summary-report header.page-header .right .report-output--date, .page--summary-report header.page-header .right .report-output--version {
+    text-align: right;
+    float: right;
+    clear: both;
+    font-size: 1.125rem;
+    line-height: 1.3; }
+  .page--summary-report header.page-header .right .report-output--version {
+    color: #D2D2D2; }
+.page--summary-report .summary-report--info {
+  padding: 2.5rem 2.5rem; }
+  .page--summary-report .summary-report--info .left, .page--summary-report .summary-report--info .right {
+    float: left;
+    width: 50%;
+    padding: 1.25rem; }
+.page--summary-report .summary-report--diagram .left, .page--summary-report .summary-report--diagram .right {
+    float: left;
+    width: 50%;}
+.page--summary-report {
+  padding: 2.5rem; }
+  .page--summary-report {
+    margin-bottom: 2.5rem; }
+.page--summary-report .summary-report--details-outer {
+  position: relative;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  border-top: 0.125rem solid #D2D2D2; }
+  .page--summary-report .summary-report--details-outer.open {
+    padding: 2.5rem; }
+  .page--summary-report .summary-report--details-outer .summary-report--details {
+    float: left;
+    width: 100%; }
+    .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row {
+      float: left;
+      width: 100%;
+      border-top: 0.0625rem solid #D2D2D2;
+      border-bottom: 0.0625rem solid #D2D2D2; }
+      .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row.header {
+        font-family: "Helvetica Neue Bold";
+        text-align: left;
+        font-size: 1.0625rem;
+        line-height: 1.3125rem;
+        border-top: none; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row.header .summary-report--details--cell {
+          padding-bottom: 1.25rem; }
+          .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row.header .summary-report--details--cell .arrow-box, .questionmark .arrow-box, .arrow-box, .effect-title .arrow-box, .pipeline-version-infobox .arrow-box {
+            display: none; }
+          .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row.header .summary-report--details--cell:hover .arrow-box, .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row.header .summary-report--details--cell:focus .arrow-box, .arrow-box, .arrow-box, .effect-title:hover .arrow-box, .effect-title:focus .arrow-box, .pipeline-version-infobox:hover .arrow-box {  
+            display: block; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row.header .action:after {
+          display: none; }
+            .questionmark input {
+              position: absolute;
+              left: -9999px;}
+            .questionmark input#faq-toggle:checked ~ div {
+            display: block; }
+
+      .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row:hover:not(.header), .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row:focus:not(.header) {
+        border-top: 0.0625rem solid #3F81D0;
+        border-bottom: 0.0625rem solid #3F81D0; }
+      .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell {
+        float: left;
+        position: relative;
+        padding: 1.25rem 0;
+        margin-right: 1%; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell.status-xsmall {
+          width: 6%; }
+// 6 percent for evidence, somewhat more for reported effect
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell.status-vaf {
+          width: 8%; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell.status-medium {
+          width: 10%; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell.status-impact {
+          width: 11%; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell.status-maf {
+          width: 13%;
+          padding-right: 2.5rem; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell.status-id {
+          padding-left: 2.5rem;
+          width: 14%; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell.status-large {
+          width: 16%; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell.status-wide {
+          width: 20%; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell.status-effect {
+          width: 20%; }
+        .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell .details--row {
+          float: left;
+          width: 100%;
+          line-height: 1.5; }
+          .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell .details--row .details--data, .page--summary-report .summary-report--details-outer .summary-report--details .summary-report--details--row .summary-report--details--cell .details--row .details--label {
+            float: left;
+            width: 50%; }
+.page--summary-report .summary-report--gene-view {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-right: 0; }
+  .page--summary-report .summary-report--gene-view header {
+    float: left;
+    width: 100%;
+    padding: 2.5rem; }
+    .page--summary-report .summary-report--gene-view header h2 span {
+      color: #9BA0A5; }
+  .page--summary-report .summary-report--gene-view .summary-report--details p {
+    font-size: 1.125rem;
+    padding: 2.5rem;
+    width: 70%;
+    margin: 0; }
+  .page--summary-report .summary-report--gene-view .summary-report--details .summary-report--diagram p {
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    width: 70%;
+    margin: 0; }
+  .page--summary-report .summary-report--gene-view .summary-report--details .summary-report--diagram {
+    padding: 2.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;}
+  .page--summary-report .summary-report--gene-view .summary-report--details .variants {
+    padding: 2.5rem; }
+    .page--summary-report .summary-report--gene-view .summary-report--details .variants .summary-report--info {
+      padding: 0; }
+      .page--summary-report .summary-report--gene-view .summary-report--details .variants .summary-report--info h3 span {
+        font-weight: normal; }
+      .page--summary-report .summary-report--gene-view .summary-report--details .variants .summary-report--info h2 {
+        margin-top: 1.25rem;
+        padding-left: 1.25rem; }
+      .page--summary-report .summary-report--gene-view .summary-report--details .variants .summary-report--info .mutation-status {
+        font-size: 1.125rem;}
+      .page--summary-report .summary-report--gene-view .summary-report--details .variants .summary-report--info .right .info-data {
+        font-family: "Helvetica Neue"; }
+
+.page--patient-list, .page--login {
+  display: none; }
+
+/*# sourceMappingURL=mtb.css.map */
+
+/* Add by Maan Rachid 28-11-2018 */
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+
+
+.TreeFixedHeightContainer
+{
+  /*float:right;*/
+  height: 305px;
+  width:432px; 
+  padding:3px; 
+  background:grey;
+}
+.TreeContent
+{
+  height:300px;
+   overflow:auto;
+    background:#fff;
+}
+
+
+/* Add by Maan Rachid 30-04-2019 */
+.inputfile {
+	width: 0.1px;
+	height: 0.3px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+  z-index: -1;
+  font-size: 10px;
+}
+
+
+
+/* Added by Maan 30-08-2019 for public MTB */
+.page--summary-report header .left .logoPublic {
+    
+  bottom: 0;
+  right: 0;
+  float: left;
+  width: 12.5rem;
+  height: 3.4375rem;
+  background: url("../img/logo/public/png/logo-landscape-karolinska-mtb-tone.png");
+  background: url("../img/logo/public/logo-landscape-karolinska-mtb-tone.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.page--patient-list header .left .logoPublic {
+    
+    bottom: 0;
+    right: 0;
+    float: left;
+    width: 12.5rem;
+    height: 3.4375rem;
+    background: url("../img/logo/public/png/logo-landscape-karolinska-mtb-tone.png");
+    background: url("../img/logo/public/logo-landscape-karolinska-mtb-tone.svg"), linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    background-size: 100%; }
+ 
+.page--summary-report header .ki {
+    bottom: 0;
+    right: 0;  
+    width: 12.5rem;
+    height: 6.4375rem;
+    background: url("../img/ki.png");
+    background: url("../img/ki.png"),linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    background-size: 100%; }
+
+.page--summary-report header .scilifelab {
+      bottom: 0;
+      right: 0;  
+      width: 12.5rem;
+      height: 6.4375rem;
+      background: url("../img/scilifelab.jpg");
+      background: url("../img/scilifelab.jpg"),linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-size: 100%; }
+
+.page--summary-report header .cce {
+        bottom: 0;
+        right: 0;  
+        width: 12.5rem;
+        height: 7.4375rem;
+        background: url("../img/CCE.png");
+        background: url("../img/CCE.png"),linear-gradient(transparent, transparent);
+        background-repeat: no-repeat;
+        background-size: 100%; }
+
+
+.linkPublic, .linkPublic:hover, .linkPublic:visited {
+  color: #3F81D0; 
+  text-decoration: none;
+}
+
+.linkPublicBold, .linkPublicBold:hover, .linkPublicBold:visited {
+  color: #8814b0ff;
+  font-weight: bold; 
+  text-decoration: none;
+  
+}
+
+.Welcomepage .arrow-box {
+  position: absolute;
+  text-align: left;
+  color: black;
+  width: 30.125rem;
+  top: 2rem;
+  bottom: unset;
+  left: -12rem;}
+
+.Welcomepage {
+    position: relative; }
+
+.Sequencing .arrow-box {
+  position: absolute;
+  text-align: left;
+  color: black;
+  width: 38.125rem;
+  top: 2rem;
+  bottom: unset;
+  left: -20rem;}
+
+.Sequencing{
+    position: relative; }
+
+
+/* Added by Maan Rachid 4-9-2019 */
+.page--summary-report .container .container .summary-report--info input {
+  padding: 0.625rem;
+  border: 0.0625rem solid #E9E9E9;
+  box-shadow: inset 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.5), 0 0.125rem 0 0 rgba(211, 211, 211, 0.5);
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  behavior: url("assets/js/PIE-1.0.0/PIE.htc");
+  float: left;
+  height: 42px;
+  font-size: 1.0625rem; }
+
+
+nav .menu-controls .logoPublic {
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("../img/logo/public/png/logo-portrait-karolinska-mtb-dark.png");
+    background: url("../img/logo/public/logo-landscape-karolinska-mtb-dark.svg"), linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    background-size: 9.375rem 2.5rem;
+    transition: 0.5s all ease; }
+  
+nav.open .menu-controls .logoPublic {
+      float: left;
+      width: 9.375rem;
+      height: 2.5rem; }
+
+
+nav .userPublic {
+        padding: 1.25rem; }
+
+nav .userPublic .user-icon {
+          float: left;
+          width: 1.875rem;
+          height: 1.875rem;
+          background: url("../img/icons/png/icon-user.png");
+          background: url("../img/icons/icon-user.svg"), linear-gradient(transparent, transparent);
+          background-repeat: no-repeat; }
+nav .userPublic .user-info {
+          float: right;
+          width: calc(100% - 3.125rem); }
+
+nav .userPublic .user-info .user-name {
+            font-size: 1.125rem; }
+nav .userPublic .user-info .user-title {
+            font-size: 0.8125rem; }
+
+
+.page--login .login .box .left .logoPublic {
+              position: absolute;
+              top: 1.25rem;
+              left: 1.25rem;
+              width: 20.5rem;
+              height: 6.4375rem;
+              background: url("../img/logo/public/png/logo-landscape-karolinska-mtb-tone.png");
+              background: url("../img/logo/public/logo-landscape-karolinska-mtb-tone.svg"), linear-gradient(transparent, transparent);
+              background-repeat: no-repeat;
+              background-size: 100%; }
+
+              ../img/logo/public/logo-landscape-karolinska-mtb-dark.svg
+
+.page--patient-list header .right .logoPublic {
+              position: relative;
+              bottom: 0;
+              right: 0;
+              float: right;
+              width: 12.5rem;
+              height: 3.4375rem;
+              background: url("../img/logo/public/png/logo-portrait-karolinska-mtb-dark.png");
+              background: url("../img/logo/public/logo-landscape-karolinska-mtb-dark.svg"), linear-gradient(transparent, transparent);
+              background-repeat: no-repeat;
+              background-size: 100%; }
+
+
+
+
+.page--summary-report .container .summary-report--info input {
+                padding: 0.625rem;
+                border: 0.0625rem solid #E9E9E9;
+                box-shadow: inset 0 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.5), 0 0.125rem 0 0 rgba(211, 211, 211, 0.5);
+                -ms-border-radius: 0.25rem;
+                -o-border-radius: 0.25rem;
+                -moz-border-radius: 0.25rem;
+                -webkit-border-radius: 0.25rem;
+                border-radius: 0.25rem;
+                behavior: url("assets/js/PIE-1.0.0/PIE.htc");
+                float: left;
+                height: 35px;
+                font-size: 1.0625rem; }
+
+
+
+.page--summary-report .container .summary-report--info input[type=file] {
+                  height: 30%; }
+
+
+              
