@@ -45,16 +45,19 @@ h3 {
 
 html {
   font-size: 100%;
-  height: 100%; }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-size: 16px;
   font-family: "Helvetica Neue";
   background-color: #F7F7F7;
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  padding-top: 2.5rem;
   color: #4A4A4A; }
 
 a {
@@ -511,16 +514,25 @@ div.id-box a, a.id-box {
 @supports (box-shadow: none) {
   .custom-select select:focus {
     outline: none; } }
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 nav {
-  position: fixed;
   max-width: 16.25rem;
-  left: 0;
-  top: 0;
   background: #FA6332;
   padding: 1.25rem 0.625rem 0rem 0.625rem;
-  min-height: 0.0625rem;
+  height: 100%;
   transition: 0.3s min-height ease;
-  z-index: 101; }
+}
+
+nav.open {
+  min-width: 15rem;
+}
+
   nav .menu-controls {
     float: left; }
   nav .menu-controls .logo {
